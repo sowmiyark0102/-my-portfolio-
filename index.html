@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sowmiya R K Portfolio</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<style>
+
+/* ================= BASE ================= */
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #05070f;
+  color: white;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= 3D BG ================= */
+#three-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at top, #0b1f3a, #05070f);
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+.hero h2 {
+  color: #00c8ff;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.btns a {
+  margin: 10px;
+  padding: 10px 18px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* IMAGES */
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 3D BACKGROUND -->
+<div id="three-bg"></div>
+
+<!-- HERO -->
+<div class="hero reveal">
+  <h1>SOWMIYA RAJKUMAR</h1>
+  <h2>Aspiring Software Engineer</h2>
+  <p>AI • ML • Full Stack Developer</p>
+
+  <div class="btns">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <div class="card">
+    I am an aspiring Software Engineer who enjoys building creative and user-friendly web experiences. I am passionate about web development and constantly improving my skills in HTML, CSS, JavaScript, and modern development tools and like working on real-world projects that challenge me to think, learn, and improve my problem-solving abilities. I am especially interested in front-end development and designing interactive, smooth user interfaces and am always exploring new technologies and staying updated with the latest trends in software development. My goal is to grow as a developer and contribute to impactful, innovative digital products.
+Open to internships, collaborations, and opportunities to learn and build.
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="reveal">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>JNN Institute of Engineering</h3>
+    <p>B.E Computer Science Engineering (2025 - 2029)</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="reveal">
+  <h2>Skills</h2>
+  <div class="card">
+    Python, Java, C, C++, JavaScript, HTML, CSS, Node.js, React.js, SQL, MongoDB,
+    Machine Learning, Deep Learning, NLP, Data Analysis, DSA, DBMS, OOP,
+    API Development, Flask, Django, Git & GitHub, Problem Solving, Communication
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship" class="reveal">
+  <h2>Internships</h2>
+
+  <div class="card">
+    <h3>Future Intern</h3>
+    <p>
+      Prompt Engineering Intern
+I completed a Prompt Engineering Internship, where I worked on designing and optimizing prompts for AI models to improve response quality and accuracy.During the internship, I gained hands-on experience in AI tools, LLM behavior, and prompt structuring techniques for real-world use cases.This experience helped me understand how to effectively communicate with AI systems and enhance output performance.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>CodSoft Internship</h3>
+    <p>
+      Web Development Intern – CodSoft
+I worked as a Web Development Intern at CodSoft, where I developed responsive and user-friendly web pages using HTML, CSS, and JavaScript.During the internship, I gained hands-on experience in front-end development, UI design, and improving website performance and structure.This experience helped me strengthen my practical coding skills and understand real-world web development workflows..
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?ai,chatbot">
+      <h3>AI Chatbot</h3>
+      <p>This is an AI-powered chatbot designed to interact with users in a conversational way and provide intelligent responses in real time. The chatbot uses natural language processing concepts and prompt engineering techniques to understand user queries and generate relevant outputs. This project helped me explore how AI models work behind conversational systems and improved my understanding of building interactive AI applications..</p>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?recommendation,ai">
+      <h3>Recommendation System</h3>
+      <p>This project is a Recommendation System designed to suggest relevant items to users based on their preferences and behavior. It analyzes patterns in data to provide personalized recommendations and improve user experience. The system uses basic machine learning concepts and similarity-based approaches to generate accurate suggestions. This project helped me understand how recommendation engines work in real-world applications like e-commerce and streaming platforms..</p>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?face,recognition">
+      <h3>Face Recognition</h3>
+      <p>This project is a Face Recognition System that can detect and identify faces from images or real-time video. It uses computer vision techniques to extract facial features and match them with stored data for accurate identification. The system is designed to improve security and automate identity verification processes. This project helped me gain hands-on experience in image processing and machine learning concepts used in real-world applications.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?task,manager">
+      <h3>Task Manager</h3>
+      <p>This project is a Task Manager application designed to help users organize and track their daily tasks efficiently. It allows users to add, update, and delete tasks while keeping everything structured and easy to manage. The system focuses on improving productivity and time management through a simple and user-friendly interface. This project helped me strengthen my understanding of basic CRUD operations and frontend/backend integration concepts.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta reveal">
+  <div class="card">
+    <h2>Let’s Build Something Amazing 🚀</h2>
+    <p>Open for internships and collaboration opportunities.</p>
+  </div>
+</section>
+
+<script>
+
+/* ================= REVEAL ================= */
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+
+/* ================= 3D BACKGROUND ================= */
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.getElementById("three-bg").appendChild(renderer.domElement);
+
+const particles = [];
+
+for (let i = 0; i < 70; i++) {
+  const geo = new THREE.SphereGeometry(0.05, 10, 10);
+  const mat = new THREE.MeshBasicMaterial({ color: 0x00c8ff });
+
+  const sphere = new THREE.Mesh(geo, mat);
+
+  sphere.position.x = (Math.random() - 0.5) * 10;
+  sphere.position.y = (Math.random() - 0.5) * 10;
+  sphere.position.z = (Math.random() - 0.5) * 10;
+
+  scene.add(sphere);
+  particles.push(sphere);
+}
+
+camera.position.z = 5;
+
+let mouseX = 0;
+let mouseY = 0;
+
+document.addEventListener("mousemove", (e) => {
+  mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+  mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+});
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  particles.forEach(p => {
+    p.rotation.x += 0.002;
+    p.rotation.y += 0.002;
+  });
+
+  camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+  camera.position.y += (-mouseY * 2 - camera.position.y) * 0.05;
+
+  camera.lookAt(0, 0, 0);
+
+  renderer.render(scene, camera);
+}
+
+animate();
+
+window.addEventListener("resize", () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+</script>
+
+</body>
+</html>
